@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    height: 5vh;
+}
+#container{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background: #999;
+    border-radius: 10px;
+}
+#card{
+  
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #777;
+    backdrop-filter: blur(10px);
+    box-shadow: 25px 25px 75px rgb(0, 0, 0,0.25);
+    overflow: auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    scale:1;
+    border-radius: 10px;
+}
+#img{
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: #0000005e;
+    padding: 3px;
+    color: gray;
+    font-size: 2rem;
+    word-wrap: normal;
+    text-align: center;
+}
+#info{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration:underline;
+    color: rgb(0, 0, 0);
+}
+a:visited{
+    color: rgb(0, 0, 0);
+}
+footer{
+  text-align: center;
+  padding: 10px;
+}
+#socials{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+    padding:10px 30%;
+}
+i{
+    color: lightslategray;
+    transition: all 0.8s ease;
+}
+figure{
+    width: 35%;
+}
