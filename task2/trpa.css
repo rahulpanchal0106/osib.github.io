@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@400;700&family=Dancing+Script&family=Exo&family=Fira+Sans:wght@300&family=Lato&family=Lobster&family=Playfair&family=Playfair+Display&family=Quicksand&family=Tangerine&family=Titan+One&family=VT323&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    font-family: Playfair , Arial, Helvetica ;
+}
+header>h1{
+    margin: 0px;
+}
+header{
+    margin:0px 0px 50px 0px;
+    font-size: 1rem;
+    text-align: left;
+}
+#h1{
+    color: white;
+    font-size: 3.7rem;
+}
+#picture{
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px 20px #000000;
+    
+}
+#page1{
+    background-color: #111;
+    color: #888;
+    text-align: center;
+    height: 100lvh;
+    width: 95%;
+    padding-right: 5%;
+}
+#left,#right{
+    display: inline-flex;
+    vertical-align: middle;
+    width: 49%;
+    height: 100%;
+    justify-content: center;
+}
+#left{
+    justify-content: center;
+    align-items: center;
+}
+#cap{
+    margin: 0px;
+
+}
+#imgCin{
+    display: none;
+    flex-direction: column;
+    margin: 0px 10px 30px 10px;
+}
+#quote-img{
+    width: 2.5rem;
+    color: white;
+    filter: contrast(0);
+    margin: 0px;
+    padding: 0px;
+}
+#right{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#np-icon{
+    width: 2rem;
+    color: white;
+    filter: contrast(0.5);
+    margin: 0px;
+    padding: 0px;
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+}
+#np-icon:hover{
+    filter: contrast(0);
+    animation: updown 0.5s ease-in-out infinite alternate;
+}
+@keyframes updown{
+    0%{
+        transform: rotate(90deg) translateX(0px);
+    }
+    100%{
+        transform: rotate(90deg) translateX(10px);
+    }
+}
+#content{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+#quote{
+    font-size: 1.4rem;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 400;
+    color: #888;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+#npB{
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
+#page2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#page2>h1{
+    position: absolute;
+    text-align: center;
+    transition: 0.5 ease;
+    text-decoration: overline;
+}
+
+@keyframes slideDown{
+    0%{
+        top: 95vh;
+        color: rgba(255, 255, 255, 0.099);
+    }
+    100%{
+        top: 100vh;
+        color: black;
+       
+    }
+}
+@keyframes slideDownR{
+    0%{
+        top: 100vh;
+        color: black;
+    }
+    100%{
+        color: rgba(255, 255, 255, 0);
+        top: 95vh;
+    }
+}
+@keyframes slideDownm{
+    0%{
+        top: 190vh;
+        color: rgba(0, 0, 0, 0);
+    }
+    100%{
+        top: 200vh;
+        color: rgb(255, 255, 255);
+       
+    }
+}
+@keyframes slideDownmR{
+    0%{
+        top: 200vh;
+        color: rgb(255, 255, 255);
+    }
+    100%{
+        color: rgba(253, 253, 253, 0);
+        top: 190vh;
+    }
+}
+
+#S{
+    border: 1px solid #88888800;
+    margin: 0px;
+    height:5px;
+    font-size: 2.4rem;
+    color: #888;
+    float:left;
+    position: relative;
+    top: -20px;
+}
+
+#container{
+    text-align: center;
+    height: 90%;
+    margin : 0 10%;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#paragraph{
+    text-align:justify;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+#para{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding-left: 20px;
+    margin: 0px;
+
+}
+#photo{
+    background-image: url(img/statue.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 10px 0px;
+    margin-left: 30px;
+    box-shadow: 0px 0px 10px 0px #000000, inset 0px 0px 10px 0px #000000;
+}
+#para, #photo{
+    display: inline-flex;
+    vertical-align: middle;
+
+}
+
+#page3{
+    width: 100%;
+    height: 100vh;
+    color: #888;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#biogm{
+    color: white;
+    position: absolute;
+    transition: 0.5 ease;
+    text-decoration: overline;
+    top: 200vh;
+
+}
+#np{
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    top: 80vh;
+    left: 5%;
+}
+#np2{
+    position: absolute;
+    left: 90%;
+    top: 180%;
+    transform: rotate(-180deg);
+}
+#np3{
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    left: 90%;
+    top: 190%;
+}
+#np4{
+    position: absolute;
+    left: 5%;
+    top: 250%;
+    transform: rotate(-180deg);
+}
+#np5{
+    position: absolute;
+    left: 5%;
+    top: 260%;
+}
+#np6{
+    position: absolute;
+    left: 90%;
+    top: 315%;
+    transform: rotate(180deg);
+
+}
+#vid{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px black;
+}
+@media screen and (max-width: 500px){
+    #photo{
+        display:none;
+    }
+    #imgCin{
+        display:flex ;
+    }
+    #para{
+        position: relative;
+        top: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    #left{
+        position: absolute;
+        display: none;
+    }
+    
+    #para{
+        width: 70%;
+    }
+}
+footer{
+    background-color: #111;
+    color: #888;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+#fa{
+    color: #ffffff;
+    text-decoration: overline;
+    font-size: 1.1rem;
+    margin: 0px;
+    padding: 4px;
+    transition: all 0.4s ease;
+    animation: color 0.5s ease infinite alternate;
+}
+
+#fa:hover{
+    color: #888;
+}
+#me{
+    width: 100%;
+    height: 100vh;
+    background-color: #111111;
+    color: #888;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#info{
+    width: 95%;
+    height: 50%;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+@keyframes color{
+    0%{
+        color: #ffffff;
+    }
+    100%{
+        color: #bababa;
+    }
+}
+#info>ul>li>a{
+    text-decoration: none;
+    color: #888;
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.4s ease;
+    animation: color 0.5s ease infinite alternate;
+}

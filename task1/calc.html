@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1 | Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="container">
+        <table>
+            <tr id="display">  
+                <td colspan="5" id="dis">
+                    <div id="display1"></div>
+                    <div id="display2"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" id="overflow">
+                    <div id="v"></div>
+                    <label for="v">Display Overflow</label>
+                </td>
+                <td colspan="1" id="err">
+                    <div id="e"></div>
+                    <label for="e">Error</label>
+                </td>
+            </tr>
+            <tr>
+                <td><button id="other" onclick="addop('(')">(</button></td>
+                <td><button id="other" onclick="addop(')')">)</button></td>
+                <td><button id="other" class="ans" onclick="preansf(dis2inn,preans)">ans</button></td>
+                <td><button id="other" class="del" onclick="del()">del</button></td>
+                <td><button id="ac" onclick="ac()">AC</button></td>
+            </tr>
+            <tr>
+                <td><button id="numbers" onclick="addop('7')">7</button></td>
+                <td><button id="numbers" onclick="addop('8')">8</button></td>
+                <td><button id="numbers" onclick="addop('9')">9</button></td>
+                <td><button id="op" class="perc" onclick="perc()">%</button></td>
+                <td><button id="op" class="sqrt" onclick="sqroot()">&radic;</button></td>
+            </tr>
+            <tr>
+                <td><button id="numbers" onclick="addop('4')">4</button></td>
+                <td><button id="numbers" onclick="addop('5')">5</button></td>
+                <td><button id="numbers" onclick="addop('6')">6</button></td>
+                <td><button id="op" onclick="addop('*')">x</button></td>
+                <td><button id="op" onclick="addop('/')">&divide;</button></td>
+            </tr>
+            <tr>
+                <td><button id="numbers" onclick="addop('1')">1</button></td>
+                <td><button id="numbers" onclick="addop('2')">2</button></td>
+                <td><button id="numbers" onclick="addop('3')">3</button></td>
+                <td><button id="op" onclick="addop('+')">+</button></td>
+                <td><button id="op" onclick="addop('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="other" onclick="addop('.')">.</button></td>
+                <td><button id="numbers" onclick="addop('0')">0</button></td>
+                <td><button id="other" onclick="signChange()">+/-</button></td>
+                <td colspan="2"><button id="eq" class="enter" onclick="ans()">=</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="calc.js"></script>
+</html>
