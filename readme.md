@@ -12,6 +12,7 @@
 * Technologies used:
     * HTML
     * CSS
+    * JavaScript
 
 * Credits:
     * Information by [Wikipedia](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan)
