@@ -83,7 +83,7 @@ footer{
   text-align: center;
   width: 98%;
   padding: 2%;
-  position: absolute;
+  position: relative;
   bottom: 0px;
 }
 #socials{
