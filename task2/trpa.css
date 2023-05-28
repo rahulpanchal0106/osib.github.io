@@ -51,6 +51,10 @@ header{
     display: none;
     flex-direction: column;
     margin: 0px 10px 30px 10px;
+    border-radius: 10px;
+}
+#picturein{
+  border-radius: 10px;
 }
 #quote-img{
     width: 2.5rem;
@@ -284,6 +288,9 @@ header{
 @media screen and (max-width: 500px){
     #photo{
         display:none;
+    }
+    #quote{
+      font-size: 1.1rem;
     }
     #imgCin{
         display:flex ;
