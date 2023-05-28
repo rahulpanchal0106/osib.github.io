@@ -4,11 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Tasks to do</title>
+  <link rel="stylesheet" href="todo.css">
 </head>
 
 <body>
+  <header>
+    <h1 id="h1">Tasks to do</h1>
+  </header>
+  <main>
+    <input type="text" id="input" placeholder="Enter task here">
+    <button id="button" onclick="addtask()">Add</button>
+    <div id="tasks">
+      <ul id="list">
 
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <p id="p">Made by <a href="#">Rahul Panchal</a></p>
+  </footer>
 </body>
+<script src="todo.js"></script>
 
 </html>
