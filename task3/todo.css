@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@400;700&family=Dancing+Script&family=Exo&family=Fira+Sans:wght@300&family=Lato&family=Lobster&family=Playfair&family=Playfair+Display&family=Quicksand&family=Tangerine&family=Titan+One&family=VT323&display=swap');
+*{
+    font-family: Fira Sans;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg,rgb(209,172,146),rgb(130,164,251));
+    font-size: 16px;
+    color: #666666;
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    width: 0.1em;
+    background-color: red;
+}
+header{
+    
+
+}
+main{
+    width: 70%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(206, 206, 206, 0.338);
+    backdrop-filter: blur(10px);
+    height: 60%;
+    border: 1px #999 solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px -20px #999;
+    transition:0.7s ease all ;
+    word-wrap: break-word;
+    text-align: justify;
+}
+main:hover{
+    box-shadow: 0px 0px 50px 0px #78787887;
+}
+#addSec{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tasks{
+    border-top: 1px #888 solid;
+    width: 100%;
+    overflow: auto;
+}
+#list{
+    padding: 0px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+#tasks>#list>li{
+    width: 100%;
+    list-style-type: none;
+    padding: 10px 0px;
+    border-bottom: 1px #888 solid;
+    display: flex;
+    flex-direction: row;
+    text-align:left;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    cursor:url(img/yes.png),auto;
+
+}
+#tasks>#list>li::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-image: url(img/uncheck.png);
+    background-size: cover;
+    display: inline-block;
+    margin-right: 20px;
+}
+#tasks>#list>li.checked{
+    color:#999999;
+    text-decoration: line-through;
+    cursor:url(img/yess.png),auto;
+}
+#tasks>#list>li.checked::before{
+    background-image: url(img/check.png);
+}
+#list>li>button{
+    background-image: url(img/x.png);
+    background-size: cover;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0);
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: 0.5s ease all;
+    cursor: url(img/c2.png) 0 0 ,auto;
+}
+#list>li>button:hover{
+    background-image: url(img/lx.png);
+}
+#list>li>button:active{
+    cursor:url(img/c1.png),auto;
+}
