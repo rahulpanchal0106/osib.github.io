@@ -2,6 +2,10 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body{
+    display: flex;
+    flex-direction: column;
+}
 h1{
     height: 5vh;
 }
@@ -29,8 +33,7 @@ h1{
         flex-direction: column;
     }
 }
-#card{
-  
+#card{ 
     padding: 10px;
     display: flex;
     flex-direction: column;
