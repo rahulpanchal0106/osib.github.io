@@ -15,7 +15,7 @@ function changeH1(){
   var note = document.getElementById("notice");
   if(taskL<=0){
     console.log("Task len: "+ taskL);
-    document.getElementById("h1").innerHTML="No task to do";
+    document.getElementById("h1").innerHTML="Your To-do list ";
     note.style.display="flex";
     note.innerHTML = "No tasks are pending";
   }else if(taskL>0){
@@ -29,18 +29,24 @@ function addtask() {
   let input = document.getElementById("input").value;
   if (input === "") {
     window.alert("Enter a task!");
+    document.getElementById("input").focus();
   } else {
     var li = document.createElement('li');
-    let del = document.createElement('button');
+    var del = document.createElement('button');
     del.setAttribute("id","delete");
     li.innerHTML = input;
-    
+    playpop();
     list.appendChild(li);
     li.appendChild(del);
     document.getElementById("input").value = "";
     changeH1();
     localStorage.setItem("tasks", list.innerHTML);
+    document.getElementById("input").focus();
   }
+}
+
+function clearMem(){
+  localStorage.setItem("tasks", "");
 }
 
 function playpop() {
@@ -59,4 +65,10 @@ list.addEventListener("click", function(e) {
   }
   
   localStorage.setItem("tasks", list.innerHTML);
+});
+
+input.addEventListener("keydown",function(event){
+  if(event.keyCode === 13){
+    addtask();
+  }
 });

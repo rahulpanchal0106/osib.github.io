@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@400;700&family=Dancing+Script&family=Exo&family=Fira+Sans:wght@300&family=Lato&family=Lobster&family=Playfair&family=Playfair+Display&family=Quicksand&family=Tangerine&family=Titan+One&family=VT323&display=swap');
+*:focus{
+    outline: none;
+}
 html{
     scroll-behavior: smooth;
 }
