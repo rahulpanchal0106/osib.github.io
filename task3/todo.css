@@ -14,10 +14,7 @@ body{
     margin: 0;
     padding: 0;
 }
-body::-webkit-scrollbar{
-    width: 0.1em;
-    background-color: red;
-}
+
 header{
     
 
@@ -52,6 +49,18 @@ main:hover{
     border-top: 1px #888 solid;
     width: 100%;
     overflow: auto;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    margin-top: 10px;
+    justify-content: center;
+}
+#tasks::-webkit-scrollbar{
+    width: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(91, 91, 91, 0.457);
+    scroll-behavior: smooth;
 }
 #list{
     padding: 0px 5%;
@@ -72,8 +81,7 @@ main:hover{
     justify-content: space-between;
     align-items: center;
     user-select: none;
-    cursor:url(img/yes.png),auto;
-
+    cursor:url(img/yes.png) 0 0,auto;
 }
 #tasks>#list>li::before{
     content: '';
@@ -85,9 +93,9 @@ main:hover{
     margin-right: 20px;
 }
 #tasks>#list>li.checked{
-    color:#999999;
+    color:#888;
     text-decoration: line-through;
-    cursor:url(img/yess.png),auto;
+    cursor:url(img/yess.png) 2 2,auto;
 }
 #tasks>#list>li.checked::before{
     background-image: url(img/check.png);
@@ -106,11 +114,18 @@ main:hover{
     align-items: center;
     border: none;
     transition: 0.5s ease all;
-    cursor: url(img/c2.png) 0 0 ,auto;
+    cursor: url(img/c2.png) 2 30,auto;
 }
 #list>li>button:hover{
     background-image: url(img/lx.png);
 }
 #list>li>button:active{
-    cursor:url(img/c1.png),auto;
+    cursor:url(img/c1.png) 2 30,auto;
+}
+#notice{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
