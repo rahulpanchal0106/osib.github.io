@@ -18,3 +18,15 @@
     * Information by [Wikipedia](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan)
     * Next and Previous button icons by [Reda](https://freeicons.io/profile/6156) on [Freeicons.io](https://freeicons.io)    
     * Quote icon by [Muhammad Haq](https://freeicons.io/profile/823) on [Freeicons.io](https://freeicons.io)
+
+# Task-3(To-do app)
+* A web app to seize your day with purpose
+* Technologies used:
+    * HTML
+    * CSS
+    * Javascript
+ * Credits:
+    * Custom cursor images by [custom-cursor](https://custom-cursor.com/)
+    * Icons by [Becris](https://freeicons.io/profile/3484), [iconKing1](https://freeicons.io/profile/3), [Hilmy Abiyyu Asad](https://freeicons.io/profile/75801), [Muhammad Haq](https://freeicons.io/profile/823)
+    from [freeicons.io](https://freeicons.io)
+
