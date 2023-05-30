@@ -27,6 +27,6 @@
     * Javascript
  * Credits:
     * Custom cursor images by [custom-cursor](https://custom-cursor.com/)
-    * Icons by [Becris](https://freeicons.io/profile/3484), [iconKing1](https://freeicons.io/profile/3), [Hilmy Abiyyu Asad](https://freeicons.io/profile/75801), [Muhammad Haq](https://freeicons.io/profile/823)
-    from [freeicons.io](https://freeicons.io)
+    * Icons by [Becris](https://freeicons.io/profile/3484), [iconKing1](https://freeicons.io/profile/3), [Hilmy Abiyyu Asad](https://freeicons.io/profile/75801) and [Muhammad Haq](https://freeicons.io/profile/823)
+    on [freeicons.io](https://freeicons.io)
 
