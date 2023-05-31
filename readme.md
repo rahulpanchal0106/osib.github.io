@@ -1,3 +1,5 @@
+# [View all three tasks](https://rahulpanchal0106.github.io/osib.github.io/)
+
 # Task-1(Calculator)
 * Making a basic Calculator that performs the basic arithmatic operations.
 
