@@ -64,7 +64,7 @@ function ans(){
 
 }
 
-//evaluation of thw expression as one of the given operands is previous ans
+//evaluation of the expression as one of the given operands is previous ans
 let dis2inn=display2.innerHTML;
 function preansf(dis2inn,preans){
   console.log("evalAns: "+preans);
@@ -118,6 +118,7 @@ function playSound(){
     console.log(disLen);
     let winwid=window.innerWidth;
     if(winwid<500){
+      document.getElementById("container").style.width=winwid-50;
         if(disLen>17){
             disableBut.forEach(function(button) {
                 button.disabled = true;
