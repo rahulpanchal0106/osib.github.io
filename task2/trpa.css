@@ -9,6 +9,14 @@ body{
     margin: 0px;
     font-family: Playfair , Arial, Helvetica ;
 }
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #000000;
+}
+body::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #999;
+}
 header>h1{
     margin: 0px;
 }
@@ -303,7 +311,7 @@ header{
         top: 20px;
     }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 630px){
     #left{
         position: absolute;
         display: none;
