@@ -74,14 +74,15 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 a{
     text-decoration:none;
-    color: white;
+    color: black;
     text-align: center;
 }
 a:visited{
-    color: white;
+    color: black;
 }
 footer{
   text-align: center;
