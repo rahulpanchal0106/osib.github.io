@@ -1,3 +1,4 @@
+//Page buttons
 document.getElementById("npB").onclick=()=>{
     document.getElementById("biog").style.animation="slideDown 2s ease";
 }
