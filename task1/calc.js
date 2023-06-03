@@ -12,6 +12,7 @@ let v=document.getElementById("v")
 var ecount=0;
 var answer;
 var preans=0;
+
 //adding operands and operators in the display
 function addop(ops){
     document.getElementById("display2").innerHTML+=ops;
@@ -66,7 +67,7 @@ function ans(){
 
 //evaluation of the expression as one of the given operands is previous ans
 let dis2inn=display2.innerHTML;
-function preansf(dis2inn,preans){
+function preansf(preans){
   console.log("evalAns: "+preans);
   display2.innerHTML+=preans;
 }
